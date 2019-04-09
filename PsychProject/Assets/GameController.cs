@@ -21,6 +21,7 @@ public class GameController : MonoBehaviour {
     public List<string> treatments;
     public List<string> disabilities;
     public int disabilityId;
+    public int previousDisability;
     public List<ViewableList> properTreatments;
 
     public GameObject TitleScreen;
@@ -123,8 +124,13 @@ public class GameController : MonoBehaviour {
         }
 
         Satisfaction.GetComponent<Slider>().value = 3;
-
+        
         disabilityId = Random.Range(1, disabilities.Count);
+
+        while(disabilityId == previousDisability)
+            disabilityId = Random.Range(1, disabilities.Count);
+
+        previousDisability = disabilityId;
         Disability.GetComponent<Text>().text = disabilities[disabilityId];
 
         for(int i = 0; i < 4; i++)

@@ -1307,7 +1307,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1081682101
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1465,11 +1465,23 @@ MonoBehaviour:
   - Steve
   - Carl
   - Gary
+  - Mark
+  - Matt
+  - Spencer
+  - Gabe
+  - Peter
+  - Pedro
   femaleNames:
   - Julia
   - Alexa
   - Jane
   - Stacy
+  - Megan
+  - Emma
+  - Carly
+  - Isabella
+  - Sophia
+  - Charlotte
   treatments: []
   disabilities:
   - 
@@ -1516,6 +1528,7 @@ MonoBehaviour:
   - "\"Doctor, I\u2019ve been binge eating and then forcing myself to throw up afterwards.
     I used to do it only around once a week, but now I do it at least once a day.\""
   disabilityId: 0
+  previousDisability: 0
   properTreatments:
   - list:
     - 
